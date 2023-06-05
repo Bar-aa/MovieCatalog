@@ -8,17 +8,21 @@ const rl = readline.createInterface({
 });
 
 function displayMenu() {
-  console.log('\nMovie Catalog CLI');
-  console.log('-----------------\n');
-  console.log('1. Display Movie Catalog');
-  console.log('2. Add New Movie');
-  console.log('3. Update Movie Details');
-  console.log('4. Delete Movie');
-  console.log('5. Search Movies');
-  console.log('6. Filter Movies');
-  console.log('7. Fetch Movies from API');
-  console.log('8. Exit\n');
-  rl.question('Enter your choice: ', handleMenuChoice);
+  console.log(`
+Movie Catalog CLI
+-----------------
+
+1. Display Movie Catalog
+2. Add New Movie
+3. Update Movie Details
+4. Delete Movie
+5. Search Movies
+6. Filter Movies
+7. Fetch Movies from API
+8. Exit
+`);
+
+rl.question('Enter your choice: ', handleMenuChoice);
 }
 
 function handleMenuChoice(ch) {
